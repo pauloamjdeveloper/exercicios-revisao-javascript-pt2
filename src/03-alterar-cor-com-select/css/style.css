@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#color-select {
+    width: 160px;
+    height: 25px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
