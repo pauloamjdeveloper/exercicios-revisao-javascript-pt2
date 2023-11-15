@@ -1,0 +1,47 @@
+:root{
+    --dark-color: #000000;
+    --white-color: #FFFFFF;
+    --red-color: #FF0000; 
+    --green-color: #0A900A; 
+}
+
+body{
+    background-image: radial-gradient(circle, var(--white-color) 0%, var(--dark-color) 100%);
+}
+
+h1 {
+    color: var(--green-color);
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#paragraph {
+    text-align: justify;
+    width: 280px;
+}
+
+#action-button {
+    width: 160px;
+    height: 25px;
+    background-color: var(--white-color);
+    color: var(--green-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
+}
+
+#action-button:hover {
+    width: 160px;
+    height: 25px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
+}
