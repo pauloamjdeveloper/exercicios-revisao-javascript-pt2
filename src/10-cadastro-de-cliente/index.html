@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="icon" href="../../assets/icons/js.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="client-session">
+        <div class="container">
+            <h2 class="title">Formulário de Cadastro de Cliente</h2>
+
+            <div class="content">
+                <form id="registration-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" class="input-form input-focus" required>
+        
+                    <label for="person">Pessoa:</label>
+                    <input type="radio" id="physical-person" name="person" value="physical-person" required>
+                    <span class="client-type">
+                        Física
+                    </span>
+                    <input type="radio" id="legal-person" name="person" value="legal-person">
+                    <spam class="client-type">
+                        Jurídica
+                    </spam>
+        
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" class="input-form-small input-focus" pattern="[0-9]{11}" disabled>
+        
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" name="cnpj" class="input-form-small input-focus" pattern="[0-9]{14}" disabled>
+        
+                    <label for="birth-date">Data de Nascimento:</label>
+                    <input type="text" id="birth-date" name="birth-date" class="input-form-small input-focus" pattern="[0-9]{8}" disabled>
+        
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" class="input-form input-focus" required>
+        
+                    <label for="zip-code">CEP:</label>
+                    <input type="text" id="zip-code" name="zip-code" class="input-form-small input-focus" pattern="[0-9]{8}" disabled>
+        
+                    <label for="phone">Telefone:</label>
+                    <input type="text" id="phone" name="phone" class="input-form-small input-focus" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-form input-focus" required>
+                    
+                    <div class="buttons">
+                        <button id="register-button" type="submit">Cadastrar</button>
+                        <button id="cancel-button" type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="output">
+                <p id="result"></p>
+            </div>  
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
