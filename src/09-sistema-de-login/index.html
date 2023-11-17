@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="icon" href="../../assets/icons/js.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="user-session">
+        <div class="container">
+            <div class="title">Cadastro de Usuário</div>
+    
+            <div class="input">
+                <label for="user-name">Nome do Usuário:</label>
+                <input type="text" class="input-focus" id="user-name" required>
+            </div>
+
+            <div class="input">
+                <label for="password">Senha do Usuário:</label>
+                <input type="password" class="input-focus" id="password" required>
+            </div>
+
+            <div class="input">
+                <label for="confirm-password">Confirmar Senha:</label>
+                <input type="password" class="input-focus" id="confirm-password" required>
+            </div>
+
+            <div class="buttons">
+                <div class="space-buttons">
+                    <button id="confirm-button" onclick="registerUser()">Cadastrar</button>
+                </div>                
+                <div class="space-buttons">
+                    <button id="cancel-button" onclick="cancel()">Cancelar</button>
+                </div>
+            </div>
+    
+            <div class="output">
+                <p id="result"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
